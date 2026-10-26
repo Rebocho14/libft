@@ -26,14 +26,14 @@ void	ft_bzero(void *s, size_t n)
 		n--;
 	}
 }
-/*int main()
+int main()
 {
 	char str[8];
 	ft_bzero(str, 8);
+	str[0 ] = 'a';
 	str[2] = 'a';
-	str[3] = 'a';
 	str[4] = 'a';
 
-	printf("%s\n", str + 2);
+	printf("%s\n", str );
 
-}*/
+}
