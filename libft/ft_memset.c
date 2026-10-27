@@ -26,9 +26,9 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
-//int	main()
-//{
-//	char str[] = "bom dia";
-//	ft_memset(str, '.', 3);
-//	printf("%s", str);
-//}
+// int	main()
+// {
+// 	char str[] = "bom dia"; 
+// 	ft_memset(str, '3', 4);
+// 	printf("%s", str);
+// }
