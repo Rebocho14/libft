@@ -1,3 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/28 15:40:04 by panibal           #+#    #+#             */
+/*   Updated: 2026/10/28 15:40:06 by panibal          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t size)
@@ -11,9 +24,9 @@ int	ft_memcmp(const void *s1, const void *s2, size_t size)
 	byte2 = (unsigned char *)s2;
 	while (i < size)
 	{
-		if (p1[i] != p2[i])
+		if (byte1[i] != byte2[i])
 		{
-			return (p1[i] - p2[i]);
+			return (byte1[i] - byte2[i]);
 		}
 		i++;
 	}
