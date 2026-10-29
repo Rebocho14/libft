@@ -6,26 +6,33 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/29 13:56:55 by panibal           #+#    #+#             */
-/*   Updated: 2026/10/29 14:14:29 by panibal          ###   ########.fr       */
+/*   Updated: 2026/10/29 15:32:14 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strchr(const char *s, int c)
+char	*strrchr(const char *s, int c)
 {
-	size_t	len;
-	char	chr;
-	
-	len = ft_strlen(s);
-	chr = (char)c;
-	while (len >= s)
+	unsigned	char	*str;
+	unsigned	char	chr;
+	size_t				i;
+
+	i = 0;
+	chr = c;
+	str = ft_strlen(s);
+	while (i < str)
 	{
-		if (chr == s)
+		if (str[i] == chr)
 		{
-			return (s);
+			return (str + i);
 		}
-		len--;
+		i--;
 	}
 	return (NULL);
+}
+int main()
+{
+	char *str = strrchr("uga buga", 'u');
+	printf("%s", str);
 }
