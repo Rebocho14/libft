@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/29 14:15:16 by panibal           #+#    #+#             */
-/*   Updated: 2026/10/29 14:34:25 by panibal          ###   ########.fr       */
+/*   Updated: 2026/10/29 20:49:13 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	return ((char *)ft_memchr(s, c, ft_strlen(s + 1)));
+	return ((char *)ft_memchr(s, c, ft_strlen(s) + 1));
 }
 int main()
 {

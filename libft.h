@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 11:04:54 by panibal           #+#    #+#             */
-/*   Updated: 2026/10/29 14:31:28 by panibal          ###   ########.fr       */
+/*   Updated: 2026/10/30 17:02:31 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
-
+#include <strings.h>
 
 
 int	ft_isalnum(int c);
@@ -33,7 +33,7 @@ size_t  ft_strlen(const char *s);
 int ft_atoi(const char *str);
 void	*ft_memset(void *s, int c, size_t n);
 int	ft_memcmp(const void *s1, const void *s2, size_t size);
-void	*memcpy(void *dest, const void *src, size_t n);
+void	*ft_memcpy(void *dest, const void *src, size_t n);
 void    *ft_memchr(const void *s, int c, size_t n);
 
 void	ft_bzero(void *s, size_t n);

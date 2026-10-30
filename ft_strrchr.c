@@ -3,36 +3,34 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/29 13:56:55 by panibal           #+#    #+#             */
-/*   Updated: 2026/10/29 15:32:14 by panibal          ###   ########.fr       */
+/*   Updated: 2026/10/29 20:30:31 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strrchr(const char *s, int c)
-{
-	unsigned	char	*str;
-	unsigned	char	chr;
-	size_t				i;
+#include "libft.h"
 
-	i = 0;
-	chr = c;
-	str = ft_strlen(s);
-	while (i < str)
+char	*ft_strrchr(const char *s, int c)
+{
+	size_t	i;
+
+	i = ft_strlen(s);
+	while (i > 0)
 	{
-		if (str[i] == chr)
-		{
-			return (str + i);
-		}
+		if (s[i] == (char)c)
+			return ((char *)(s + i));
 		i--;
 	}
+	if (s[0] == (char)c)
+		return ((char *)s);
 	return (NULL);
 }
 int main()
 {
-	char *str = strrchr("uga buga", 'u');
+	char *str = ft_strrchr("uga buga", 'u');
 	printf("%s", str);
 }
