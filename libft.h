@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 11:04:54 by panibal           #+#    #+#             */
-/*   Updated: 2026/10/30 17:02:31 by panibal          ###   ########.fr       */
+/*   Updated: 2026/10/31 15:54:38 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,7 @@ void	*ft_memset(void *s, int c, size_t n);
 int	ft_memcmp(const void *s1, const void *s2, size_t size);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void    *ft_memchr(const void *s, int c, size_t n);
+void	*memmove(void *dest, const void *src, size_t n);
 
 void	ft_bzero(void *s, size_t n);
 
