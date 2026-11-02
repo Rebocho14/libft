@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 13:08:51 by panibal           #+#    #+#             */
-/*   Updated: 2026/10/22 13:34:45 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/02 15:37:07 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,14 @@ void	ft_bzero(void *s, size_t n)
 		n--;
 	}
 }
-int main()
-{
-	char str[8];
-	ft_bzero(str, 8);
-	str[0 ] = 'a';
-	str[2] = 'a';
-	str[4] = 'a';
+//int main()
+//{
+//	char str[8];
+//	ft_bzero(str, 8);
+//	str[0 ] = 'a';
+//	str[2] = 'a';
+//	str[4] = 'a';
 
-	printf("%s\n", str );
+//	printf("%s\n", str );
 
-}
+//}

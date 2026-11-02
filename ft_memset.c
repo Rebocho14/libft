@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 11:26:49 by panibal           #+#    #+#             */
-/*   Updated: 2026/10/29 11:01:49 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/02 15:49:34 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
- int	main()
- {
- 	char str[] = "bom dia"; 
- 	ft_memset(str, '3', 4);
- 	printf("%s", str);
- }
+// int	main()
+// {
+// 	char str[] = "bom dia"; 
+// 	ft_memset(str, '3', 4);
+// 	printf("%s", str);
+// }
