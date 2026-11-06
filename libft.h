@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 11:04:54 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/02 16:15:37 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/06 18:35:32 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,16 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 void	*ft_calloc(size_t num, size_t size);
 
+typedef struct s_list
+{
+void *content;
+struct s_list *next;
+} t_list;
 
+t_list  *ft_lstnew(void *content);
+unsigned    int ft_lstsize(t_list *lst);
+t_list  *ft_lstlast(t_list *lst);
+void    ft_lstadd_front(t_list **lst, t_list *new);
+void    ft_lstadd_back(t_list **lst, t_list *new);
 
 #endif

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 10:58:02 by panibal           #+#    #+#             */
-/*   Updated: 2026/10/31 11:26:22 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/03 01:25:58 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,3 +39,4 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 //	ft_striteri(str, upper_even_pos);
 //	printf("%s\n", str);
 //}
+
