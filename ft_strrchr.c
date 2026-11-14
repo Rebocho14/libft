@@ -6,10 +6,9 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/29 13:56:55 by panibal           #+#    #+#             */
-/*   Updated: 2026/10/31 10:26:44 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/14 11:10:56 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 
@@ -28,8 +27,8 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s);
 	return (NULL);
 }
-int main()
-{
-	char *str = ft_strrchr("uga buga", 'u');
-	printf("%s", str);
-}
+//int main()
+//{
+//	char *str = ft_strrchr("uga buga", 'u');
+//	printf("%s", str);
+//}

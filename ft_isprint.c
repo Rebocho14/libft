@@ -6,17 +6,17 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 11:05:28 by panibal           #+#    #+#             */
-/*   Updated: 2026/10/22 11:06:41 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/14 11:49:09 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    if (c >= 32 && c <= 126)
-    {
-        return (1);
-    }
-    return (0);
+	if (c >= 32 && c <= 126)
+	{
+		return (1);
+	}
+	return (0);
 }

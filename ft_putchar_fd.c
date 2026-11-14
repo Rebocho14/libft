@@ -6,13 +6,13 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 11:44:59 by panibal           #+#    #+#             */
-/*   Updated: 2026/10/27 11:47:12 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/14 11:19:25 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
-    write(fd, &c, 1);
+	write(fd, &c, 1);
 }

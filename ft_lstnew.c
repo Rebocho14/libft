@@ -3,32 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 17:00:06 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/06 17:44:17 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/14 11:45:23 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list  *ft_lstnew(void *content)
+t_list	*ft_lstnew(void *content)
 {
-    t_list  *node;
+	t_list	*node;
 
-    node = malloc(sizeof(t_list));
-    if(!node)
-        return (NULL);
-    node->content = content;
-    node->next = NULL;
-    return (node);
+	node = malloc(sizeof(t_list));
+	if (!node)
+		return (NULL);
+	node->content = content;
+	node->next = NULL;
+	return (node);
 }
 // int main(void)
 // {
 //     t_list  *head;                         
 //     t_list  *second_node;                       
 
-//     head = ft_lstnew("uga");
+//     head = ft_lstnew(ft_strdup(""));
 //     second_node = ft_lstnew("buga");
 //     head->next = second_node;
 //     printf("%s\n", (char *)head->content);          

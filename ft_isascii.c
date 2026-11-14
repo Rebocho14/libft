@@ -6,17 +6,17 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 11:05:32 by panibal           #+#    #+#             */
-/*   Updated: 2026/10/22 11:06:41 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/14 13:24:48 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
-    if (c >= 0 && c <= 127)
-    {
-        return (1);
-    }
-    return (0);
+	if (c >= 0 && c <= 127)
+	{
+		return (1);
+	}
+	return (0);
 }

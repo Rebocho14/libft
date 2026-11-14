@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 14:21:51 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/02 14:23:42 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/14 10:26:02 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_strnstr(const char *str, const char *src, size_t size)
 	}
 	return (NULL);
 }
-int main()
-{
-	printf("%s", ft_strnstr("uga buga buga", "buga", 13));
-}
+//int main()
+//{
+//	printf("%s", ft_strnstr("uga buga buga", "buga", 13));
+//}

@@ -6,26 +6,28 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 11:44:54 by panibal           #+#    #+#             */
-/*   Updated: 2026/10/27 11:47:12 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/14 11:19:07 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_putendl_fd(char *s, int fd)
+void	ft_putendl_fd(char *s, int fd)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (s[i])
-    {
-        ft_putchar_fd(s[i], fd);
-        i++;
-    }
-    ft_putchar_fd('\n', fd);
+	i = 0;
+	if (!s)
+		return ;
+	while (s[i])
+	{
+		ft_putchar_fd(s[i], fd);
+		i++;
+	}
+	ft_putchar_fd('\n', fd);
 }
-int main()
-{
-    char s[] = "asdsd";
-    ft_putendl_fd(s, 1);
-}
+//int main()
+//{
+//    char s[] = "asdsd";
+//    ft_putendl_fd(s, 1);
+//}

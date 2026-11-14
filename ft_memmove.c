@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 12:31:57 by panibal           #+#    #+#             */
-/*   Updated: 2026/10/31 15:56:27 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/14 11:37:21 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,11 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	unsigned	char	*dst;
-	unsigned	char	*sor;
-	size_t				i;
+	unsigned char	*dst;
+	unsigned char	*sor;
 
-	dst = (unsigned	char *) dest;
+	dst = (unsigned char *) dest;
 	sor = (unsigned char *) src;
-
 	if (dst > sor)
 	{
 		while (n > 0)
@@ -33,17 +31,17 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		ft_memcpy(dst, sor, n);
 	return (dest);
 }
-int main()
-{
-	char	b[] = "0123456789";
-	char	a[] = "abc";
+//int main()
+//{
+//	char	b[] = "0123456789";
+//	char	a[] = "abc";
 
-	ft_memmove(a + 2, a, 5);
-	printf("1: %s | %s\n", a, b);
+//	ft_memmove(a + 2, a, 5);
+//	printf("1: %s | %s\n", a, b);
 
-	ft_memmove(a, a + 2, 5);	
-	printf("2: %s | %s\n", a, b);
+//	ft_memmove(a, a + 2, 5);	
+//	printf("2: %s | %s\n", a, b);
 
-	ft_memmove(a, a + 3, 0);
-	printf("3: %s | %s\n", a, b);
-}
+//	ft_memmove(a, a + 3, 0);
+//	printf("3: %s | %s\n", a, b);
+//}

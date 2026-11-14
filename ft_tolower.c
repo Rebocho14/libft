@@ -6,17 +6,17 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 11:05:14 by panibal           #+#    #+#             */
-/*   Updated: 2026/10/22 11:06:41 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/14 13:25:20 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    if (c >= 'A' && c <= 'Z')
-    {
-        return (c + 32);
-    }
-    return (c);    
+	if (c >= 'A' && c <= 'Z')
+	{
+		return (c + 32);
+	}
+	return (c);
 }
