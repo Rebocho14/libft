@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/30 16:44:39 by panibal           #+#    #+#             */
-/*   Updated: 2026/10/31 00:01:38 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/06 20:01:07 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,10 @@ int ft_strncmp(const char *s1,const char *s2, size_t n)
     while (i < n)
     {
         if (str1[i] != str2[i] || str1[i] == '\0')
-            return(str1[i] - str2[i]);
+            return (str1[i] - str2[i]);
         i++;
     }
-    return(0)   
+    return (0);
 }
 int main()
 {

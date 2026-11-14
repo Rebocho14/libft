@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/01 17:48:28 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/02 12:54:56 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/12 02:35:02 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (ft_strlen(src));
 }
-int	main()
-{
-	char dest[] = "ads";
-	const	char src[] = "ola";
-	printf("%zu",ft_strlcpy(dest, src, 4));
-}
+// int	main()
+// {
+// 	char dest[] = "ads";
+// 	const	char src[] = "ola";
+// 	printf("%zu",ft_strlcpy(dest, src, 4));
+// }
 

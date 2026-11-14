@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 11:05:45 by panibal           #+#    #+#             */
-/*   Updated: 2026/10/22 11:06:41 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/12 02:51:46 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,13 @@ int ft_atoi(const char *str)
     }
     return (res * sign);
 }
+// int main()
+// {
+//     printf("%d\n", ft_atoi("  -1234"));
+//     printf("%d\n", ft_atoi("  +5678"));
+//     printf("%d\n", ft_atoi("  42"));
+//     printf("%d\n", ft_atoi("  -0"));
+//     printf("%d\n", ft_atoi("  +0"));
+//     printf("%d\n", ft_atoi("  -2147483648"));
+//     printf("%d\n", ft_atoi("  +2147483647"));
+// }

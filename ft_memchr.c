@@ -6,12 +6,12 @@
 /*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 15:44:06 by panibal           #+#    #+#             */
-/*   Updated: 2026/10/29 20:47:21 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/12 03:00:28 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
+
 void    *ft_memchr(const void *s, int c, size_t n)
 {
     unsigned    char    *str;

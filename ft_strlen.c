@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 11:05:23 by panibal           #+#    #+#             */
-/*   Updated: 2026/10/22 11:06:41 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/12 02:35:26 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,9 @@ size_t  ft_strlen(const char *s)
         i++;
     return (i);    
 }
+// int main()
+// {
+//     char str[] = "uga buga";
+
+//     printf("%zu\n", ft_strlen(str));
+// }

@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 20:16:51 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/03 01:25:50 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/14 02:23:04 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,12 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	dest[len_dest + i] = '\0';
 	return (len_src + len_dest);
 }
+// int main()
+// {
+// 	char dest[20] = "uga";
+// 	char src[] = " buga";
+// 	size_t size = 10;
+
+// 	printf("%zu\n", ft_strlcat(dest, src, size));
+// 	printf("%s\n", dest);
+// }
