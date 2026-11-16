@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 13:08:51 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/12 02:50:51 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/14 14:55:47 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	unsigned	char *str;
-	int				 i;
+	unsigned char	*str;
+	int				i;
 
 	str = (unsigned char *)s;
 	i = 0;
@@ -33,7 +33,5 @@ void	ft_bzero(void *s, size_t n)
 //	str[0 ] = 'a';
 //	str[2] = 'a';
 //	str[4] = 'a';
-
 //	printf("%s\n", str );
-
 //}

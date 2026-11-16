@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: panibal <panibal@student.42lisboa.com>     +#+  +:+       +#+        */
+/*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 10:58:02 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/12 02:23:43 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/14 14:57:56 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-    unsigned int i;
+	unsigned int	i;
 
-    if (!s || !f)
-        return ;
-    i = 0;
-    while (s[i])
-    {
-        f(i, &s[i]);
-        i++;
-    }
+	if (!s || !f)
+		return ;
+	i = 0;
+	while (s[i])
+	{
+		f(i, &s[i]);
+		i++;
+	}
 }
 //void	upper_even_pos(unsigned int i, char *c)
 //{
@@ -35,8 +35,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 //int main()
 //{
 //	char str[] = "uga buga";
-
 //	ft_striteri(str, upper_even_pos);
 //	printf("%s\n", str);
 //}
-

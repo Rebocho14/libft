@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 11:04:54 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/14 13:30:35 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/14 15:11:21 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,11 @@ char			*ft_strnstr(const char *str, const char *src, size_t size);
 size_t			ft_strlcat(char *dest, const char *src, size_t size);
 size_t			ft_strlcpy(char *dst, const char *src, size_t size);
 void			*ft_calloc(size_t num, size_t size);
+char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char			*ft_strjoin(char const *s1, char const *s2);
+char			*ft_substr(char const *s, unsigned int start, size_t len);
+char			*ft_strtrim(char const *s1, char const *set);
+char			*ft_strdup(const char *s1);
 
 typedef struct s_list
 {
