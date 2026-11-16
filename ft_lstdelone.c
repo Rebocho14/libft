@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/16 14:02:07 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/16 16:28:15 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/16 18:14:15 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	if(!lst || !del)
+	if (!lst || !del)
 		return ;
 	del(lst->content);
 	free(lst);

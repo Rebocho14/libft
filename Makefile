@@ -44,6 +44,9 @@ SRC =   ft_atoi.c\
 		ft_itoa.c\
 		ft_lstdelone.c\
 		ft_lstclear.c\
+		ft_lstiter.c\
+		ft_lstmap.c\
+		ft_split.c\
 
 OBJ = $(SRC:.c=.o)
 all: $(NAME)
