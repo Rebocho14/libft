@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 11:04:54 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/14 15:11:21 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/16 16:22:26 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ void			ft_putstr_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
 void			ft_putendl_fd(char *s, int fd);
 char			*ft_strchr(const char *s, int c);
+char			*ft_strrchr(const char *s, int c);
 char			*ft_strnstr(const char *str, const char *src, size_t size);
 size_t			ft_strlcat(char *dest, const char *src, size_t size);
 size_t			ft_strlcpy(char *dst, const char *src, size_t size);
@@ -47,6 +48,10 @@ char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strtrim(char const *s1, char const *set);
 char			*ft_strdup(const char *s1);
+char			*ft_itoa(int n);
+void			ft_striteri(char *s, void (*f)(unsigned int, char *));
+char			*ft_strtrim(char const *s1, char const *set);
+int				ft_strncmp(const char *s1, const char *s2, size_t n);
 
 typedef struct s_list
 {
@@ -58,5 +63,7 @@ unsigned int	ft_lstsize(t_list *lst);
 t_list			*ft_lstlast(t_list *lst);
 void			ft_lstadd_front(t_list **lst, t_list *new);
 void			ft_lstadd_back(t_list **lst, t_list *new);
+void			ft_lstclear(t_list **lst, void (*del)(void*));
+void			ft_lstdelone(t_list *lst, void (*del)(void*));
 
 #endif

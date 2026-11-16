@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 17:00:06 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/14 11:45:23 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/16 14:43:09 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ t_list	*ft_lstnew(void *content)
 // {
 //     t_list  *head;                         
 //     t_list  *second_node;                       
-
 //     head = ft_lstnew(ft_strdup(""));
 //     second_node = ft_lstnew("buga");
 //     head->next = second_node;
