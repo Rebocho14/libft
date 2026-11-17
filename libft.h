@@ -6,7 +6,7 @@
 /*   By: panibal <panibal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 11:04:54 by panibal           #+#    #+#             */
-/*   Updated: 2026/11/16 18:18:33 by panibal          ###   ########.fr       */
+/*   Updated: 2026/11/17 11:49:11 by panibal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,8 @@
 # define LIBFT_H
 
 # include <stdlib.h>
-# include <stdio.h>
 # include <unistd.h>
-# include <strings.h>
+# include <stdint.h>
 
 int				ft_isalnum(int c);
 int				ft_isalpha(int c);
@@ -52,7 +51,7 @@ char			*ft_itoa(int n);
 void			ft_striteri(char *s, void (*f)(unsigned int, char *));
 char			*ft_strtrim(char const *s1, char const *set);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
-char 			**ft_split(char const *s, char c);
+char			**ft_split(char const *s, char c);
 
 typedef struct s_list
 {
