@@ -1,7 +1,5 @@
 NAME = libft.a
 
-SRCS := srcs/
-
 CFLAGS = -Wall -Werror -Wextra
 
 SRC =   ft_atoi.c\
@@ -65,7 +63,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: clean fclean re
-
-so:
-	$(CC) -fPIC -shared $(CFLAGS) $(SRC) -o libft.so
+.PHONY: all clean fclean re
